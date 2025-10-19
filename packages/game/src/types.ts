@@ -29,3 +29,6 @@ export interface ClientMessage{
     type:'JOIN'|'MOVE'|'RECONNECT'|'FORFEIT';
     payload:any;
 }
+
+export type { DiscColor } from "./constants";
+export { COLS, ROWS } from "./constants";

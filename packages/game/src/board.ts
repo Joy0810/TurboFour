@@ -35,10 +35,10 @@ function countLine(rowDir:number,colDir:number,lastCol:number,lastRow:number,boa
     let c=lastCol+colDir;
     while(r>=0&&r<ROWS&&c>=0&&c<COLS){
         const cell=board[r]?.[c];
-        if(cell!==disc){
-        count++;
-        r+=rowDir;
-        c+=colDir;
+        if(cell===disc){
+            count++;
+            r+=rowDir;
+            c+=colDir;
         }
         else break;
     }
